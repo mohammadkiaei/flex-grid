@@ -1,0 +1,101 @@
+html {
+  box-sizing: border-box;
+}
+
+html *,
+html *::after,
+html *::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: tahoma;
+  line-height: 1.6;
+  color: #404040;
+  margin: 0;
+  background: #fff;
+  display: flex;
+  min-height: 100vh;
+}
+
+.holy-grail {
+  display: flex;
+  flex-direction: column;
+}
+
+.holy-grail__sidebar {
+  display: flex;
+  order: 3;
+  flex-flow: column wrap;
+  flex-grow: 2;
+}
+
+.holy-grail__content {
+  display: flex;
+  order: 2;
+  flex-direction: column;
+  flex-grow: 6;
+  padding: 1em 2em;
+  direction: ltr;
+}
+
+.holy-grail__nav {
+  display: flex;
+  order: 1;
+  flex-flow: column wrap;
+  flex-grow: 2;
+}
+
+a {
+  display: none;
+}
+
+@media (max-width: 48em) {
+
+  /* .holy-grail__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .holy-grail__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .holy-grail__nav,
+  .holy-grail__sidebar {
+    display: flex;
+    flex-direction: column;
+  } */
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+.header,
+.footer {
+  display: flex;
+  padding: 1.5em;
+  background-color: hsla(31, 15%, 50%, 0.1);
+  justify-content: center;
+}
+
+.holy-grail__body {
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.holy-grail__nav,
+.holy-grail__sidebar {
+  padding: 1em;
+  border-radius: 3px;
+  text-align: center;
+  background-color: hsla(31, 15%, 50%, 0.1);
+}
+
+
+/* developed By SeyedMohammadMahdi Kiaei  */
